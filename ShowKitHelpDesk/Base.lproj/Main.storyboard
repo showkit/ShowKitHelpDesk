@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAc-Hf-CJ9">
+                                <rect key="frame" x="20" y="0.0" width="440" height="402"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Big-ShowKit-Logo-Black.png" translatesAutoresizingMaskIntoConstraints="NO" id="cxn-dv-QqC">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="cxn-dv-QqC" secondAttribute="height" multiplier="1:1" id="Wyo-A7-snu"/>
+                                            <constraint firstAttribute="width" secondItem="cxn-dv-QqC" secondAttribute="height" multiplier="1:1" id="ijD-0o-gru"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wyo-A7-snu"/>
+                                                <exclude reference="ijD-0o-gru"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="Wyo-A7-snu"/>
+                                                <include reference="ijD-0o-gru"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="70" y="37" width="460" height="460"/>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.60000002384185791" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cxn-dv-QqC" secondAttribute="trailing" constant="70" id="gpG-eJ-dpQ"/>
+                                    <constraint firstItem="cxn-dv-QqC" firstAttribute="leading" secondItem="AAc-Hf-CJ9" secondAttribute="leading" constant="70" id="hRF-8B-Df6"/>
+                                    <constraint firstAttribute="centerY" secondItem="cxn-dv-QqC" secondAttribute="centerY" id="jQ5-Ok-DtA"/>
+                                    <constraint firstAttribute="centerX" secondItem="cxn-dv-QqC" secondAttribute="centerX" id="zvb-r3-RFi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="cxn-dv-QqC"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="gpG-eJ-dpQ"/>
+                                        <exclude reference="hRF-8B-Df6"/>
+                                        <exclude reference="jQ5-Ok-DtA"/>
+                                        <exclude reference="zvb-r3-RFi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="cxn-dv-QqC"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="gpG-eJ-dpQ"/>
+                                        <include reference="hRF-8B-Df6"/>
+                                        <include reference="jQ5-Ok-DtA"/>
+                                        <include reference="zvb-r3-RFi"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98u-X3-km5">
+                                <rect key="frame" x="0.0" y="410" width="480" height="70"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="keC-7A-W7O">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KY9-q0-BHK" customClass="BButton">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" title="Answer">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="heightClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="20" y="13" width="94" height="44"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="answerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RjK-vN-beg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZD7-Qo-pU9" customClass="BButton">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="heightClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="122" y="13" width="55" height="44"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="muteButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wa3-04-P4T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcY-uJ-6Zp" customClass="BButton">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="heightClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="185" y="13" width="55" height="44"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="videoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czh-XJ-7Pg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-MM-EMA" customClass="BButton">
+                                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <variation key="heightClass=regular" fixedFrame="YES">
+                                                    <rect key="frame" x="248" y="13" width="55" height="44"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="drawButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dMD-6y-tq0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="KY9-q0-BHK"/>
+                                                <exclude reference="ZD7-Qo-pU9"/>
+                                                <exclude reference="wcY-uJ-6Zp"/>
+                                                <exclude reference="6Wa-MM-EMA"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="2" y="0.0" width="374" height="70"/>
+                                            <mask key="subviews">
+                                                <include reference="KY9-q0-BHK"/>
+                                                <include reference="ZD7-Qo-pU9"/>
+                                                <include reference="wcY-uJ-6Zp"/>
+                                                <include reference="6Wa-MM-EMA"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TV-Ve-NVK" customClass="BButton">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zeT-Ge-qCg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.70999999999999996" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5TV-Ve-NVK" secondAttribute="trailing" constant="20" id="3Vj-V1-1lH"/>
+                                    <constraint firstAttribute="height" constant="70" id="hGW-Ml-hNC"/>
+                                    <constraint firstAttribute="bottom" secondItem="5TV-Ve-NVK" secondAttribute="bottom" constant="13" id="nyv-ky-9V0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="keC-7A-W7O"/>
+                                        <exclude reference="5TV-Ve-NVK"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="hGW-Ml-hNC"/>
+                                        <exclude reference="3Vj-V1-1lH"/>
+                                        <exclude reference="nyv-ky-9V0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="hGW-Ml-hNC"/>
+                                        <include reference="3Vj-V1-1lH"/>
+                                        <include reference="nyv-ky-9V0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="keC-7A-W7O"/>
+                                        <include reference="5TV-Ve-NVK"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AAc-Hf-CJ9" secondAttribute="trailing" constant="20" id="0AW-vG-U9g"/>
+                            <constraint firstItem="AAc-Hf-CJ9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="7Bw-tT-Qhj"/>
+                            <constraint firstItem="98u-X3-km5" firstAttribute="top" secondItem="AAc-Hf-CJ9" secondAttribute="bottom" constant="17" id="7Gr-bd-G9G"/>
+                            <constraint firstItem="AAc-Hf-CJ9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="LoJ-0v-0AJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="98u-X3-km5" secondAttribute="bottom" id="aIp-r2-jV5"/>
+                            <constraint firstAttribute="trailing" secondItem="98u-X3-km5" secondAttribute="trailing" id="jSp-YY-X7c"/>
+                            <constraint firstItem="98u-X3-km5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mqM-qJ-KKr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0AW-vG-U9g"/>
+                                <exclude reference="7Bw-tT-Qhj"/>
+                                <exclude reference="LoJ-0v-0AJ"/>
+                                <exclude reference="7Gr-bd-G9G"/>
+                                <exclude reference="jSp-YY-X7c"/>
+                                <exclude reference="mqM-qJ-KKr"/>
+                                <exclude reference="aIp-r2-jV5"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="0AW-vG-U9g"/>
+                                <include reference="7Bw-tT-Qhj"/>
+                                <include reference="LoJ-0v-0AJ"/>
+                                <include reference="7Gr-bd-G9G"/>
+                                <include reference="jSp-YY-X7c"/>
+                                <include reference="mqM-qJ-KKr"/>
+                                <include reference="aIp-r2-jV5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="KY9-q0-BHK" id="Km1-9k-Z8G"/>
+                        <outlet property="drawButton" destination="6Wa-MM-EMA" id="3d8-ui-HZL"/>
+                        <outlet property="inCallButtonsView" destination="keC-7A-W7O" id="mGU-IO-HM1"/>
+                        <outlet property="logoutButton" destination="5TV-Ve-NVK" id="lwm-Fy-WxA"/>
+                        <outlet property="mainLogoImageView" destination="cxn-dv-QqC" id="u8L-WM-UfF"/>
+                        <outlet property="mainToolbarView" destination="98u-X3-km5" id="6JE-Yf-4p0"/>
+                        <outlet property="mainVideoView" destination="AAc-Hf-CJ9" id="gvH-VM-AjF"/>
+                        <outlet property="muteButton" destination="ZD7-Qo-pU9" id="Y8i-2f-Z5y"/>
+                        <outlet property="videoButton" destination="wcY-uJ-6Zp" id="saY-vp-A7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="433.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Big-ShowKit-Logo-Black.png" width="1000" height="1000"/>
+    </resources>
+</document>
