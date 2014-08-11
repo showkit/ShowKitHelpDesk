@@ -10,8 +10,12 @@
 #import <ShowKit/ShowKit.h>
 #import "BButton.h"
 #import "SVProgressHUD.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface MainViewController : UIViewController <UIAlertViewDelegate>
+{
+    AVAudioPlayer*      m_AVPlayer;
+}
 @property (weak, nonatomic) IBOutlet UIView *mainVideoView;
 @property (weak, nonatomic) IBOutlet UIView *mainToolbarView;
 @property (weak, nonatomic) IBOutlet UIView *inCallButtonsView;

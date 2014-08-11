@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC5751F11992E5EC0094802A /* ShowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5751F01992E5EC0094802A /* ShowKit.framework */; };
+		CC5751F71992E6B60094802A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC5751F41992E6B60094802A /* SVProgressHUD.bundle */; };
+		CC5751F81992E6B60094802A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5751F61992E6B60094802A /* SVProgressHUD.m */; };
 		CCACDF711977487F00491D6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDF701977487F00491D6A /* main.m */; };
 		CCACDF741977487F00491D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDF731977487F00491D6A /* AppDelegate.m */; };
 		CCACDF771977487F00491D6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDF761977487F00491D6A /* MainViewController.m */; };
@@ -29,8 +32,7 @@
 		CCACDFB91978AA1E00491D6A /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDFB31978AA1E00491D6A /* NSString+FontAwesome.m */; };
 		CCACDFBA1978AA1E00491D6A /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDFB51978AA1E00491D6A /* UIColor+BButton.m */; };
 		CCACDFBB1978AA1E00491D6A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCACDFB71978AA1E00491D6A /* FontAwesome.ttf */; };
-		CCACDFC31978C26400491D6A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCACDFC01978C26400491D6A /* SVProgressHUD.bundle */; };
-		CCACDFC41978C26400491D6A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDFC21978C26400491D6A /* SVProgressHUD.m */; };
+		CCF703C519989B4F0019F9A5 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = CCF703C419989B4F0019F9A5 /* ring.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC5751F01992E5EC0094802A /* ShowKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShowKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Build/Products/Release-iphoneos/ShowKit.framework"; sourceTree = "<group>"; };
+		CC5751F31992E6B60094802A /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		CC5751F41992E6B60094802A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		CC5751F51992E6B60094802A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		CC5751F61992E6B60094802A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		CCACDF6B1977487F00491D6A /* ShowKitHelpDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowKitHelpDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCACDF6F1977487F00491D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCACDF701977487F00491D6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,10 +82,7 @@
 		CCACDFB41978AA1E00491D6A /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
 		CCACDFB51978AA1E00491D6A /* UIColor+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BButton.m"; sourceTree = "<group>"; };
 		CCACDFB71978AA1E00491D6A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
-		CCACDFBF1978C26400491D6A /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
-		CCACDFC01978C26400491D6A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		CCACDFC11978C26400491D6A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		CCACDFC21978C26400491D6A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		CCF703C419989B4F0019F9A5 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				CCACDFA71978A30200491D6A /* libz.dylib in Frameworks */,
 				CCACDFA81978A30200491D6A /* OpenGLES.framework in Frameworks */,
 				CCACDFA91978A30200491D6A /* QuartzCore.framework in Frameworks */,
+				CC5751F11992E5EC0094802A /* ShowKit.framework in Frameworks */,
 				CCACDFAA1978A30200491D6A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +115,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC5751F21992E6B60094802A /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				CC5751F31992E6B60094802A /* SVProgressHUD-Prefix.pch */,
+				CC5751F41992E6B60094802A /* SVProgressHUD.bundle */,
+				CC5751F51992E6B60094802A /* SVProgressHUD.h */,
+				CC5751F61992E6B60094802A /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		CCACDF621977487F00491D6A = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +162,7 @@
 		CCACDF6E1977487F00491D6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCF703C419989B4F0019F9A5 /* ring.wav */,
 				CCACDF911978A1C700491D6A /* Big-ShowKit-Logo-Black.png */,
 				CCACDF6F1977487F00491D6A /* Info.plist */,
 				CCACDF701977487F00491D6A /* main.m */,
@@ -173,7 +190,8 @@
 		CCACDFAB1978A30700491D6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CCACDFBE1978C26400491D6A /* SVProgressHUD */,
+				CC5751F21992E6B60094802A /* SVProgressHUD */,
+				CC5751F01992E5EC0094802A /* ShowKit.framework */,
 				CCACDFAE1978AA1E00491D6A /* BButton */,
 				CCACDF951978A30200491D6A /* AudioToolbox.framework */,
 				CCACDF961978A30200491D6A /* AVFoundation.framework */,
@@ -218,17 +236,6 @@
 				CCACDFB71978AA1E00491D6A /* FontAwesome.ttf */,
 			);
 			path = resources;
-			sourceTree = "<group>";
-		};
-		CCACDFBE1978C26400491D6A /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				CCACDFBF1978C26400491D6A /* SVProgressHUD-Prefix.pch */,
-				CCACDFC01978C26400491D6A /* SVProgressHUD.bundle */,
-				CCACDFC11978C26400491D6A /* SVProgressHUD.h */,
-				CCACDFC21978C26400491D6A /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +318,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCACDFC31978C26400491D6A /* SVProgressHUD.bundle in Resources */,
+				CC5751F71992E6B60094802A /* SVProgressHUD.bundle in Resources */,
+				CCF703C519989B4F0019F9A5 /* ring.wav in Resources */,
 				CCACDF7A1977487F00491D6A /* Main.storyboard in Resources */,
 				CCACDF921978A1C700491D6A /* Big-ShowKit-Logo-Black.png in Resources */,
 				CCACDF7C1977487F00491D6A /* Images.xcassets in Resources */,
@@ -336,7 +344,7 @@
 				CCACDFBA1978AA1E00491D6A /* UIColor+BButton.m in Sources */,
 				CCACDFB91978AA1E00491D6A /* NSString+FontAwesome.m in Sources */,
 				CCACDF771977487F00491D6A /* MainViewController.m in Sources */,
-				CCACDFC41978C26400491D6A /* SVProgressHUD.m in Sources */,
+				CC5751F81992E6B60094802A /* SVProgressHUD.m in Sources */,
 				CCACDF741977487F00491D6A /* AppDelegate.m in Sources */,
 				CCACDFB81978AA1E00491D6A /* BButton.m in Sources */,
 				CCACDF711977487F00491D6A /* main.m in Sources */,
@@ -459,6 +467,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Release-iphoneos",
 				);
 				INFOPLIST_FILE = ShowKitHelpDesk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -478,6 +487,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Release-iphoneos",
 				);
 				INFOPLIST_FILE = ShowKitHelpDesk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

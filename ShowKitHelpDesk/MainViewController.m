@@ -19,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSURL *soundURL = [[NSBundle mainBundle] URLForResource:@"ring" withExtension:@"wav"];
+    m_AVPlayer= [[AVAudioPlayer alloc] initWithContentsOfURL:soundURL error:nil];
+    [m_AVPlayer setNumberOfLoops:-1];
+    
     CALayer *videoShadowLayer = self.mainVideoView.layer;
     videoShadowLayer.masksToBounds = NO;
     videoShadowLayer.shadowOffset = CGSizeMake(0.0, 5.0);
@@ -85,6 +89,21 @@
     {
         [SVProgressHUD showWithStatus:@"Incoming call..." maskType:SVProgressHUDMaskTypeNone];
         [self.inCallButtonsView setHidden:NO];
+        
+        if([UIApplication sharedApplication].applicationState  == UIApplicationStateBackground)
+        {
+            //if the application is in the background, show the user a localnotification
+            UILocalNotification* ln = [[UILocalNotification alloc] init];
+            ln.fireDate = [NSDate date];
+            ln.alertBody = [NSString stringWithFormat:@"Incoming call from %@", obj.UserObject];
+            ln.soundName = @"ring.wav";
+            [[UIApplication sharedApplication] cancelAllLocalNotifications];
+            [[UIApplication sharedApplication] scheduleLocalNotification:ln];
+        } else {
+            //otherwise lets play a ringing tone.
+            [self->m_AVPlayer play];
+        }
+        
     }
     else if ([(NSString*)obj.Value isEqualToString:SHKConnectionStatusInCall])
     {
@@ -163,6 +182,12 @@
 }
 
 - (IBAction)answerButtonTapped:(id)sender {
+    
+    if([m_AVPlayer isPlaying])
+    {
+        [m_AVPlayer stop];
+    }
+    
     NSString* connectionStatus = [ShowKit getStateForKey:SHKConnectionStatusKey];
     if ([connectionStatus isEqualToString:SHKConnectionStatusInCall]) {
         [ShowKit hangupCall];
@@ -209,6 +234,12 @@
 }
 
 - (IBAction)logoutButtonTapped:(id)sender {
+    
+    if([m_AVPlayer isPlaying])
+    {
+        [m_AVPlayer stop];
+    }
+    
     NSString* login_state = (NSString*)[ShowKit getStateForKey: SHKConnectionStatusKey];
     if ([login_state isEqualToString:SHKConnectionStatusLoggedIn]) {
         [SVProgressHUD showWithStatus:@"Logging out..." maskType:SVProgressHUDMaskTypeBlack];
