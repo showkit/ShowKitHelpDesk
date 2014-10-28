@@ -133,6 +133,7 @@
         [SVProgressHUD dismiss];
     }
     else if ([(NSString*)obj.Value isEqualToString:SHKConnectionStatusCallFailed]) {
+        [self showFailure];
     }
 }
 
