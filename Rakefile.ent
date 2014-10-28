@@ -1,0 +1,19 @@
+require 'betabuilder'
+
+BetaBuilder::Tasks.new do |config|
+  config.configuration = "Release"
+  
+  config.workspace_path = "ShowKitHelpDesk.xcodeproj"
+  config.scheme         = "ShowKitHelpDesk"
+  config.app_name       = "ShowKitHelpDesk"
+  config.xcode4_archive_mode = true
+  config.company_name = "Novel Apps Corporation"
+  
+  config.deploy_using(:web) do |web|
+    web.deploy_to = "https://files.brandreporter.com/showkit_helpdesk"
+    web.remote_host = "root@files.brandreporter.com"
+    web.remote_directory = "/var/www/html/showkit_helpdesk"
+    web.display_image = "Icon.png"
+    web.full_size_image = "Large.png"
+  end
+end
