@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC5751F11992E5EC0094802A /* ShowKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5751F01992E5EC0094802A /* ShowKit.framework */; };
 		CC5751F71992E6B60094802A /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CC5751F41992E6B60094802A /* SVProgressHUD.bundle */; };
 		CC5751F81992E6B60094802A /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5751F61992E6B60094802A /* SVProgressHUD.m */; };
+		CCA89B8D1A79815700B0D44B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA89B8C1A79815700B0D44B /* CoreImage.framework */; };
 		CCACDF711977487F00491D6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDF701977487F00491D6A /* main.m */; };
 		CCACDF741977487F00491D6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDF731977487F00491D6A /* AppDelegate.m */; };
 		CCACDF771977487F00491D6A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDF761977487F00491D6A /* MainViewController.m */; };
@@ -32,6 +32,7 @@
 		CCACDFB91978AA1E00491D6A /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDFB31978AA1E00491D6A /* NSString+FontAwesome.m */; };
 		CCACDFBA1978AA1E00491D6A /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CCACDFB51978AA1E00491D6A /* UIColor+BButton.m */; };
 		CCACDFBB1978AA1E00491D6A /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCACDFB71978AA1E00491D6A /* FontAwesome.ttf */; };
+		CCCF85F41A48E6B4005CE2AD /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCCF85F31A48E6B4005CE2AD /* VideoToolbox.framework */; };
 		CCF703C519989B4F0019F9A5 /* ring.wav in Resources */ = {isa = PBXBuildFile; fileRef = CCF703C419989B4F0019F9A5 /* ring.wav */; };
 /* End PBXBuildFile section */
 
@@ -46,11 +47,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC5751F01992E5EC0094802A /* ShowKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShowKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Build/Products/Release-iphoneos/ShowKit.framework"; sourceTree = "<group>"; };
 		CC5751F31992E6B60094802A /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
 		CC5751F41992E6B60094802A /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		CC5751F51992E6B60094802A /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		CC5751F61992E6B60094802A /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		CCA89B8C1A79815700B0D44B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		CCACDF6B1977487F00491D6A /* ShowKitHelpDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowKitHelpDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCACDF6F1977487F00491D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCACDF701977487F00491D6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 		CCACDFB41978AA1E00491D6A /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
 		CCACDFB51978AA1E00491D6A /* UIColor+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BButton.m"; sourceTree = "<group>"; };
 		CCACDFB71978AA1E00491D6A /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		CCCF85F31A48E6B4005CE2AD /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		CCF703C419989B4F0019F9A5 /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ring.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA89B8D1A79815700B0D44B /* CoreImage.framework in Frameworks */,
+				CCCF85F41A48E6B4005CE2AD /* VideoToolbox.framework in Frameworks */,
 				CCACDFA01978A30200491D6A /* AudioToolbox.framework in Frameworks */,
 				CCACDFA11978A30200491D6A /* AVFoundation.framework in Frameworks */,
 				CCACDFA21978A30200491D6A /* CFNetwork.framework in Frameworks */,
@@ -100,7 +104,6 @@
 				CCACDFA71978A30200491D6A /* libz.dylib in Frameworks */,
 				CCACDFA81978A30200491D6A /* OpenGLES.framework in Frameworks */,
 				CCACDFA91978A30200491D6A /* QuartzCore.framework in Frameworks */,
-				CC5751F11992E5EC0094802A /* ShowKit.framework in Frameworks */,
 				CCACDFAA1978A30200491D6A /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,8 +193,9 @@
 		CCACDFAB1978A30700491D6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCA89B8C1A79815700B0D44B /* CoreImage.framework */,
+				CCCF85F31A48E6B4005CE2AD /* VideoToolbox.framework */,
 				CC5751F21992E6B60094802A /* SVProgressHUD */,
-				CC5751F01992E5EC0094802A /* ShowKit.framework */,
 				CCACDFAE1978AA1E00491D6A /* BButton */,
 				CCACDF951978A30200491D6A /* AudioToolbox.framework */,
 				CCACDF961978A30200491D6A /* AVFoundation.framework */,
@@ -453,6 +457,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -468,14 +473,16 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Release-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShowKitHelpDesk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -488,13 +495,15 @@
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Release-iphoneos",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShowKitHelpDesk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "armv7 armv7s";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};

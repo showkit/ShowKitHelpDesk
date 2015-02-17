@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4778981C4CF3A96874A7954D38D69BD8A3047C4C</key>
-		<string>ssh://github.com/showkit/ShowKitHelpDesk.git</string>
+		<string>github.com:showkit/ShowKitHelpDesk.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ShowKitHelpDesk.xcodeproj/project.xcworkspace</string>
+	<string>ShowKitHelpDesk.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4778981C4CF3A96874A7954D38D69BD8A3047C4C</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/showkit/ShowKitHelpDesk.git</string>
+	<string>github.com:showkit/ShowKitHelpDesk.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

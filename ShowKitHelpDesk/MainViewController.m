@@ -65,7 +65,7 @@
     [ShowKit setConfig:@{
                          SHKVideoLocalPreviewModeKey: SHKVideoLocalPreviewEnabled,
                          SHKMainDisplayViewKey: self.mainVideoView,
-                         SHKVideoDecodeDeviceKey: SHKVideoDecodeDeviceSoftware
+                         SHKVideoDecodeDeviceKey: SHKVideoDecodeDeviceAuto
                          }];
     
     
