@@ -87,6 +87,7 @@
     
     if([(NSString*)obj.Value isEqualToString:SHKConnectionStatusCallIncoming])
     {
+        [ShowKit setState:SHKVideoDecodeDeviceAuto forKey:SHKVideoDecodeDeviceKey];
         [SVProgressHUD showWithStatus:@"Incoming call..." maskType:SVProgressHUDMaskTypeNone];
         [self.inCallButtonsView setHidden:NO];
         

@@ -96,6 +96,7 @@
 				CCCF85F41A48E6B4005CE2AD /* VideoToolbox.framework in Frameworks */,
 				CCACDFA01978A30200491D6A /* AudioToolbox.framework in Frameworks */,
 				CCACDFA11978A30200491D6A /* AVFoundation.framework in Frameworks */,
+				C63B95351A896A8700A8C2EB /* ShowKit.framework in Frameworks */,
 				CCACDFA21978A30200491D6A /* CFNetwork.framework in Frameworks */,
 				CCACDFA31978A30200491D6A /* CoreGraphics.framework in Frameworks */,
 				CCACDFA41978A30200491D6A /* CoreMedia.framework in Frameworks */,
